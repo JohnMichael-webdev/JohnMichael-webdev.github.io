@@ -4,151 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Genshin-Themed Portfolio</title>
-
+    <title>Genshin Characters Description</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        body {
+        .card-text {
             font-family: 'Poppins', sans-serif;
-        }
-
-        .navbar-brand {
-            font-family: 'Cinzel', serif;
-            font-size: 28px;
-        }
-
-        .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: 32px;
-            margin-bottom: 20px;
+            font-size: 15px;
         }
 
         .card-title {
-            font-weight: bold;
+            font-family: 'Cinzel', serif;
             font-size: 20px;
-        }
-
-        footer {
-            background-color: #7fa1ff;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .form-control,
-        .btn {
-            border-radius: 0;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(127, 161, 255);">
+    <nav class="navbar bg-body-tertiary" style="background-color: rgb(127, 161, 255) !important;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <a class="navbar-brand fs-1 text-white" style="font-family: 'Cinzel', serif;">Genshin Characters
+                Description</a>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section class="container mt-5" id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>Hello! I'm a passionate developer and a Genshin Impact fan. This portfolio showcases my favorite characters as if they were personal projects—each with their own unique skills, personality, and story. I enjoy front-end development, storytelling through design, and creating fun, themed projects like this one!</p>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="container mt-5" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-            <!-- Project Card 1 -->
+    <!-- Card Section -->
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+            <!-- Furina Card -->
             <div class="col">
                 <div class="card h-100 shadow">
-                    <img src="images/Furina.jpg" class="card-img-top img-fluid" alt="Furina">
+                    <img src="images/Furina.jpg" class="card-img-top img-fluid" alt="Furina Image">
                     <div class="card-body" style="background-color: lightblue;">
-                        <h5 class="card-title">Furina Project</h5>
-                        <p class="card-text">A project centered on justice systems and user-centered governance design, themed around Fontaine.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h5 class="card-title">Furina</h5>
+                        <p class="card-text">She is the Hydro Archon of Fontaine, one
+                            of the game's regions, and is known for her elegance and beauty. As the ruler of Fontaine,
+                            Furina is deeply involved in the justice system of her region, where she values law and
+                            order. She also has a reputation for being enigmatic, balancing her duties as an archon with
+                            her personal ideals.</p>
+                        <a href="#" class="btn btn-primary">MORE</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project Card 2 -->
+            <!-- Venti Card -->
             <div class="col">
                 <div class="card h-100 shadow">
-                    <img src="images/Venti.webp" class="card-img-top img-fluid" alt="Venti">
+                    <img src="images/Venti.webp" class="card-img-top img-fluid" alt="Venti Image">
                     <div class="card-body" style="background-color: rgb(173, 230, 211);">
-                        <h5 class="card-title">Venti Project</h5>
-                        <p class="card-text">A fun, music-integrated web app inspired by Venti's bard lifestyle and free-spirited vibe.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h5 class="card-title">Venti</h5>
+                        <p class="card-text">Venti is the
+                            playful and carefree Anemo
+                            Archon who governs Mondstadt, the City of Freedom. Known for his love of music and wine, he
+                            often appears in the guise of a wandering bard. Despite his lighthearted demeanor, Venti
+                            holds
+                            deep wisdom and strength, and he plays a vital role in protecting Mondstadt's freedom.</p>
+                        <a href="#" class="btn btn-primary">MORE</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project Card 3 -->
+            <!-- Zhongli Card -->
             <div class="col">
                 <div class="card h-100 shadow">
-                    <img src="images/Zhongli_Card.webp" class="card-img-top img-fluid" alt="Zhongli">
+                    <img src="images/Zhongli_Card.webp" class="card-img-top img-fluid" alt="Zhongli Image">
                     <div class="card-body" style="background-color: rgb(230, 220, 173);">
-                        <h5 class="card-title">Zhongli Project</h5>
-                        <p class="card-text">A traditional design system and policy manager themed around Geo principles and Liyue culture.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h5 class="card-title">Zhongli</h5>
+                        <p class="card-text">Zhongli is the Geo Archon of Liyue, known
+                            for his wisdom, elegance, and deep respect for tradition. In his mortal guise, he works as a
+                            consultant for the Wangsheng Funeral Parlor, offering profound knowledge of history and
+                            contracts. Despite his calm and composed demeanor, Zhongli possesses immense strength and an
+                            unshakable sense of duty to Liyue.</p>
+                        <a href="#" class="btn btn-primary">MORE</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project Card 4 -->
+            <!-- Nahida Card -->
             <div class="col">
                 <div class="card h-100 shadow">
-                    <img src="images/Nahida_JPG.jpg" class="card-img-top img-fluid" alt="Nahida">
+                    <img src="images/Nahida_JPG.jpg" class="card-img-top img-fluid" alt="Nahida Image">
                     <div class="card-body" style="background-color: rgb(201, 230, 173);">
-                        <h5 class="card-title">Nahida Project</h5>
-                        <p class="card-text">An AI-driven knowledge base inspired by Nahida's wisdom and the academic world of Sumeru.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <h5 class="card-title">Nahida</h5>
+                        <p class="card-text">Nahida is the Dendro Archon of Sumeru. Despite her youthful appearance, she
+                            is highly intelligent and possesses immense wisdom. As the vessel of Lesser Lord Kusanali,
+                            she plays a crucial role in guiding Sumeru and uncovering its hidden truths. </p>
+                        <a href="#" class="btn btn-primary">MORE</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section class="container mt-5 mb-5" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="your@email.com">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Your message here..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 My Genshin Portfolio. All rights reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
