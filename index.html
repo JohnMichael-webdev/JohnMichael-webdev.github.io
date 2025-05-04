@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>John Michael Macalanda | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -22,58 +22,60 @@
         }
 
         .section-title {
-            font-size: 30px;
-            font-weight: bold;
-            color: #333;
-            margin-top: 50px;
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 60px;
+            margin-bottom: 10px;
             text-align: center;
         }
 
         .section-subtitle {
             font-size: 18px;
-            color: #777;
+            color: #666;
             text-align: center;
+            margin-bottom: 30px;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             object-fit: cover;
+            border-radius: 50%;
             margin-bottom: 15px;
+            border: 4px solid #343a40;
         }
 
         .card {
-            margin: 20px 0;
             border: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 230px;
+            object-fit: contain;
+            padding: 15px;
         }
 
         .card-body {
             padding: 20px;
         }
 
-        .project-img {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .contact-form textarea {
-            resize: none;
-            width: 100%;
-            height: 150px;
+        .quote {
+            font-style: italic;
+            color: #555;
         }
 
         .footer {
             background-color: #343a40;
             color: #fff;
-            padding: 30px 0;
+            padding: 25px 0;
+            margin-top: 60px;
             text-align: center;
-        }
-
-        .quote {
-            margin-top: 10px;
-            font-style: italic;
-            color: #555;
         }
     </style>
 </head>
@@ -88,13 +90,13 @@
     </nav>
 
     <!-- About Me Section -->
-    <div class="container mt-5">
+    <div class="container">
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Student, I love to play games, 20</p>
+        <p class="section-subtitle">Student | Gamer | 20 Years Old</p>
         <div class="row justify-content-center">
             <div class="col-md-4 text-center">
                 <img src="images/Profile pic 1.jpg" alt="Your Photo" class="profile-img">
-                <p>Hello! I'm John Michael Macalanda.</p>
+                <p class="mt-3">Hello! I'm <strong>John Michael Macalanda</strong>.</p>
                 <p class="quote">"The only way to do great work is to love what you do."</p>
             </div>
         </div>
@@ -103,68 +105,57 @@
     <!-- Projects Section -->
     <div class="container mt-5">
         <h2 class="section-title">My Projects</h2>
-        <p class="section-subtitle">A selection of projects that showcase my work</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/Project sample 1.jpg" class="card-img-top project-img" alt="Project 1">
+        <p class="section-subtitle">A selection of projects in the subject of WebDev that showcase my work</p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/Project sample 1.jpg" class="card-img-top" alt="Project 1">
                     <div class="card-body">
-                        <h5 class="card-title"> Activity 4</h5>
-                        <p class="card-text">This project showcases the detailed specifications of the Realme 12 Pro+
-                            smartphone. It features a user-friendly interface with an organized layout, displaying key
-                            specs such as the display, processor, RAM, storage options, camera capabilities, battery,
-                            and more. The project includes high-quality images, a price section, and a sample image
-                            gallery taken with the phone's camera. Additionally, it allows users to interact with the
-                            phone's specifications, providing a complete and informative experience. The design is built
-                            using Bootstrap for responsive, mobile-friendly viewing.</p>
+                        <h5 class="card-title">Activity 4</h5>
+                        <p class="card-text">Realme 12 Pro+ detailed specs page built with Bootstrap, featuring camera samples, layout for phone specs, and interactive UI.</p>
                         <a href="A04/index.html" class="btn btn-dark">View Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/Ocean park image.jpg" class="card-img-top project-img" alt="Project 2">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/Ocean park image.jpg" class="card-img-top" alt="Project 2">
                     <div class="card-body">
-                        <h5 class="card-title">Activity 5 </h5>
-                        <p class="card-text">Manila Ocean Park is the Philippines' premier marine-themed park and
-                            oceanarium, offering interactive exhibits, aquatic adventures, and family-friendly
-                            attractions for all ages.</p>
+                        <h5 class="card-title">Activity 5</h5>
+                        <p class="card-text">Manila Ocean Park site showcasing marine life attractions, interactive activities, and family experiences.</p>
                         <a href="A05/index.html" class="btn btn-dark">View Project</a>
                     </div>
                 </div>
             </div>
-           <div class="col-md-4">
-                <div class="card">
-                    <img src="images/Sakura.jpeg" class="card-img-top project-img" alt="Project 3">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="images/Sakura.jpeg" class="card-img-top" alt="Project 3">
                     <div class="card-body">
                         <h5 class="card-title">Activity 6</h5>
-                        <p class="card-text">Explore the Beauty of Japan
-                            Discover the top destinations in Japan through a visual gallery showcasing iconic locations
-                            such as Tokyo, Kyoto, Osaka, and Mount Fuji. Each destination is presented with a brief
-                            description highlighting its unique charm, from vibrant cities to tranquil temples and
-                            breathtaking natural landscapes. Whether you're drawn to modern architecture, cultural
-                            heritage, or scenic beauty, this gallery offers a glimpse into the diverse wonders of
-                            Japan..</p>
+                        <p class="card-text">Explore Japan through a gallery of scenic spots including Tokyo, Kyoto, and Mount Fuji. Focused on cultural and visual appeal.</p>
                         <a href="A06/index.html" class="btn btn-dark">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="A07/logo-removebg-preview.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Activity 7</h5>
+                        <p class="card-text">Dragon Ball API-based gallery, showing popular anime characters with dynamic visuals and data integration.</p>
+                        <a href="A07/index.html" class="btn btn-dark">View Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-4">
-        <div class="card">
-            <img src="A07/logo-removebg-preview.png" class="card-img-top project-img" alt="Project 3">
-            <div class="card-body">
-                <h5 class="card-title">Activity 7</h5>
-                <p class="card-text">This is an API about the anime Dragonball, this API shows a gallery of the characters in the Dragon Ball Anime</p>
-                <a href="A07/index.html" class="btn btn-dark">View Project</a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
+    <footer class="footer">
+        <p>© 2025 John Michael Macalanda. All rights reserved.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
