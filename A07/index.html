@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,18 +42,21 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container-fluid pt-3 px-4">
     <a href="../index.html" class="btn btn-outline-light btn-sm">
       Back to Profile
     </a>
   </div>
-  
+
+  <a href="view.html" class="btn btn-outline-warning btn-sm my-3 mx-3">
+    Switch to List View
+  </a>
+
   <div class="container-fluid py-4">
     <div class="text-center">
-      <img src="logo-removebg-preview.png"
-           alt="Dragon Ball Logo"
-           class="img-fluid header-logo">
+      <img src="logo-removebg-preview.png" alt="Dragon Ball Logo" class="img-fluid header-logo">
     </div>
 
     <div class="row" id="gallery"></div>
@@ -112,8 +116,9 @@
       modalTitle.textContent = character.name;
 
       const transformations = character.transformations?.length
-        ? `<ul>${character.transformations.map(form => `<li>${form.name}</li>`).join('')}</ul>`
-        : '<p>No known transformations.</p>';
+  ? `<ul>${character.transformations.map(form => `<li>${form.name}</li>`).join('')}</ul>`
+  : '<p>No known transformations.</p>';
+
 
       modalContent.innerHTML = `
         <img src="${character.image}" class="img-fluid mb-3" alt="${character.name}" />
@@ -131,6 +136,10 @@
     document.addEventListener('DOMContentLoaded', loadCharacters);
   </script>
 
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
