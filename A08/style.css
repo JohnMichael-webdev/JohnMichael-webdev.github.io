@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	font-family: 'Minecraftia', sans-serif;
+	background-color: #e0e0e0;
+}
+
+.minecraft-title {
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 3px 3px #000;
+	text-align: center;
+	padding-top: 100px;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 14px;
+    background-color: #4B0082;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #2A003D;
+    box-shadow: 4px 4px 0 #2A003D;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #6A0DAD;
+    box-shadow: 6px 6px 0 #2A003D;
+    transform: translateY(-2px);
+}
+
+.main-content {
+	background-image: url('img/nether.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 50px 0;
+}
+
+.content-wrapper {
+	padding: 20px;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+}
+
+.content-wrapper h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.card {
+	background-color: #6B2E1F;
+	width: 90%;
+	max-width: 500px;
+	border-radius: 0;
+	border: 4px solid #3B1B0E;
+	box-shadow: 6px 6px 0 #4A1306, 12px 12px 0 #3B0F03;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px) scale(1.05);
+	box-shadow: 8px 8px 0 #4A1306, 16px 16px 0 #3B0F03;
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	image-rendering: pixelated;
+}
+
+.card h3 {
+	color: #F2B179;
+	text-shadow: 2px 2px #3B0F03;
+	margin: 15px 0 10px;
+	font-size: 20px;
+}
+
+.card p {
+	color: #E6C89E;
+	text-shadow: 1px 1px #3B0F03;
+	font-size: 14px;
+	padding: 0 15px 20px;
+}
